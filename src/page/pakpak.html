@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="progress-container">
+      <div id="progress">LOADING 0/100</div>
+    </div>
+    <div class="absolute w-full">
+      <h1 class="text-xl text-center bg-black font-bold">Batak Pakpak</h1>
+    </div>
+    <div id="list-menu" class="absolute bg-white text-black p-2 m-4">
+      <ul>
+        <li>
+          <a class="font-bold" href="toba.html">Ke Batak Toba</a>
+        </li>
+        <li>
+          <a class="font-bold" href="mandailing.html">Ke Batak Mandailing</a>
+        </li>
+        <li>
+          <label for="color-slider">Ambient Intensity</label>
+          <input
+            type="range"
+            id="ambient-slider"
+            min="0"
+            max="10"
+            step="1"
+            value="1"
+          />
+        </li>
+        <li>
+          <button type="" id="go-inside">Go Inside</button>
+        </li>
+        <li>
+          <button type="" id="go-outside">Go Outside</button>
+        </li>
+        <li>
+          <button type="" id="random-color">Random Color</button>
+        </li>
+        <li>
+          <button type="" id="reset-color">Reset Color</button>
+        </li>
+        <li>
+          <label for="inside-light">Indor Light</label>
+          <input
+            type="range"
+            id="inside-light"
+            min="-5"
+            max="5"
+            step="1"
+            value="0"
+          />
+        </li>
+        <li>
+          <label for="toggle-day-night">Day/Night Mode</label>
+          <input type="checkbox" id="toggle-day-night" />
+        </li>  
+      </ul>
+    </div>
+
+    <div class="h-screen w-full" id="root"></div>
+    <script type="module" src="../script/pakpak.js"></script>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="progress-container">
+      <div id="progress">LOADING 0/100</div>
+    </div>
+    <div class="absolute w-full">
+      <h1 class="text-xl text-center bg-black font-bold">Batak Toba</h1>
+    </div>
+    <div id="list-menu" class="absolute bg-white text-black p-2 m-4">
+      <ul>
+        <li>
+          <a class="font-bold" href="mandailing.html">Ke Batak Mandailing</a>
+        </li>
+        <li>
+          <a class="font-bold" href="pakpak.html">Ke Batak Pakpak</a>
+        </li>
+        <li>
+          <label for="color-slider">Ambient Intensity</label>
+          <input
+            type="range"
+            id="ambient-slider"
+            min="0"
+            max="10"
+            step="1"
+            value="3"
+          />
+        </li>
+        <li>
+          <button type="" id="go-inside">Go Inside</button>
+        </li>
+        <li>
+          <button type="" id="go-outside">Go Outside</button>
+        </li>
+        <li>
+          <button type="" id="random-color">Random Color</button>
+        </li>
+        <li>
+          <button type="" id="reset-color">Reset Color</button>
+        </li>
+        <li>
+          <label for="inside-light">Indor Light</label>
+          <input
+            type="range"
+            id="inside-light"
+            min="0"
+            max="10"
+            step="1"
+            value="5"
+          />
+        </li>
+        <li>
+          <label for="toggle-day-night">Day/Night Mode</label>
+          <input type="checkbox" id="toggle-day-night" />
+        </li>
+      </ul>
+    </div>
+    <div class="h-screen w-full" id="root"></div>
+  </body>
+  <script></script>
+  <script type="module" src="../script/toba.js"></script>
+</html>
